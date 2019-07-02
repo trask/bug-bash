@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationInsights>
+
+  <InstrumentationKey>** Your instrumentation key **</InstrumentationKey>
+
+  <RoleName>Bug Bash - Distributed Tracing - W3C Headers, without back compat, Service B</RoleName>
+
+  <!-- HTTP request component (not required for bare API) -->
+  <TelemetryModules>
+    <Add type="com.microsoft.applicationinsights.web.extensibility.modules.WebRequestTrackingTelemetryModule">
+      <Param name="W3CEnabled" value="true" />
+      <Param name="enableW3CBackCompat" value="false" />
+    </Add>
+    <Add type="com.microsoft.applicationinsights.web.extensibility.modules.WebSessionTrackingTelemetryModule" />
+    <Add type="com.microsoft.applicationinsights.web.extensibility.modules.WebUserTrackingTelemetryModule" />
+  </TelemetryModules>
+
+  <!-- Events correlation (not required for bare API) -->
+  <!-- These initializers add context data to each event -->
+  <TelemetryInitializers>
+    <Add type="com.microsoft.applicationinsights.web.extensibility.initializers.WebOperationIdTelemetryInitializer" />
+    <Add type="com.microsoft.applicationinsights.web.extensibility.initializers.WebOperationNameTelemetryInitializer" />
+    <Add type="com.microsoft.applicationinsights.web.extensibility.initializers.WebSessionTelemetryInitializer" />
+    <Add type="com.microsoft.applicationinsights.web.extensibility.initializers.WebUserTelemetryInitializer" />
+    <Add type="com.microsoft.applicationinsights.web.extensibility.initializers.WebUserAgentTelemetryInitializer" />
+  </TelemetryInitializers>
+
+  <!--
+  <SDKLogger type="CONSOLE">
+    <Level>TRACE</Level>
+  </SDKLogger>
+  -->
+
+  <!--
+  <Channel>
+    <DeveloperMode>true</DeveloperMode>
+  </Channel>
+  -->
+
+</ApplicationInsights>
