@@ -1,0 +1,26 @@
+{
+    "connectionString": "InstrumentationKey=** Your instrumentation key **",
+    "roleName": "Bug Bash - Codeless Agent",
+    "debug": true,
+    "telemetryContext": {
+        "k8s.pod.name": "amazing-product",
+        "k8s.pod.namespace": "product-ns"
+    },
+    "jmxMetrics": [
+        {
+            "objectName": "java.lang:type=Threading",
+            "attribute": "ThreadCount",
+            "display": "Thread Count"
+        },
+        {
+            "objectName": "java.lang:type=MemoryPool,name=*",
+            "attribute": "Usage.used",
+            "display": "Memory Pool Total"
+        },
+        {
+            "objectName": "java.lang:type=ClassLoading",
+            "attribute": "LoadedClassCount",
+            "display": "Current Class Loaded Count"
+        }
+    ]
+}
