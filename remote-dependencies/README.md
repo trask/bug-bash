@@ -17,3 +17,9 @@ Test
 
 * Hit http://localhost:8080/http-dependency/failure
 * Verify data in portal
+
+* Hit http://localhost:8080/jdbc-dependency/success
+* Verify data in portal
+
+* Hit http://localhost:8080/jdbc-dependency/failure
+* Verify data in portal
