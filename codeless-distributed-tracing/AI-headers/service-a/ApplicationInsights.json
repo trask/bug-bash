@@ -1,0 +1,6 @@
+{
+  "connectionString": "InstrumentationKey=** Your instrumentation key **",
+  "roleName": "Bug Bash - Codeless Distributed Tracing - AI Headers, Service A",
+  "debug": false,
+  "developerMode": false
+}
