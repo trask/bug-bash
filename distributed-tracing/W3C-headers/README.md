@@ -7,12 +7,12 @@ Configuration
 
 Test
 
-* Copy `applicationinsights-agent-2.5.0-BETA-SNAPSHOT.jar` into this directory
+* Copy `applicationinsights-agent-2.5.0.jar` into this directory
 * Update instrumentation key in `ApplicationInsights.xml`
 * Build all three `frontend`, `service-a` and `service-b`, from their directories
   * `mvn clean package`
 * Run all three, from their directories
-  * `java -javaagent:applicationinsights-agent-2.5.0-BETA-SNAPSHOT.jar -jar target/app.jar`
+  * `java -javaagent:applicationinsights-agent-2.5.0.jar -jar target/app.jar`
 
 * Hit http://localhost:8080/service-a
 * Verify data in portal
