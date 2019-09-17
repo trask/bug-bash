@@ -31,6 +31,6 @@
   </dependencies>
 
   <build>
-    <finalName>app</finalName>
+    <finalName>ROOT</finalName>
   </build>
 </project>

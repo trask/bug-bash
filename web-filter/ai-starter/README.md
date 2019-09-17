@@ -9,7 +9,7 @@ Configuration
 Test
 
 * Update instrumentation key in `application.properties`
-* Build: `mvn clean package`
+* Build with `mvn clean package`
 * Run: `java -jar target/app.jar`
 
 * Hit http://localhost:8080/hello
