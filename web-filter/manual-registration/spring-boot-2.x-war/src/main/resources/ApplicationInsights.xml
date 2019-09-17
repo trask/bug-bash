@@ -3,7 +3,7 @@
 
   <InstrumentationKey>** Your instrumentation key **</InstrumentationKey>
 
-  <RoleName>Bug Bash - Web Filter - manual registration</RoleName>
+  <RoleName>Bug Bash - Web Filter - manual registration, Spring Boot 2.x, WAR</RoleName>
 
   <!-- HTTP request component (not required for bare API) -->
   <TelemetryModules>

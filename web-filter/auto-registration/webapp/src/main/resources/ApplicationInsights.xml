@@ -3,7 +3,7 @@
 
   <InstrumentationKey>** Your instrumentation key **</InstrumentationKey>
 
-  <RoleName>Bug Bash - Web Filter - manual registration</RoleName>
+  <RoleName>Bug Bash - Web Filter - auto registration</RoleName>
 
   <!-- HTTP request component (not required for bare API) -->
   <TelemetryModules>
