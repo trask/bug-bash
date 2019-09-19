@@ -7,11 +7,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/hello")
+@WebServlet("/exception")
 @SuppressWarnings("serial")
-public class HelloServlet extends HttpServlet {
+public class ExceptionServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.getOutputStream().print("Hello!");
+        throw new RuntimeException("here is your exception :-)");
     }
 }
