@@ -1,16 +1,15 @@
 Configuration
 
-* ApplicationInsights Java Agent
 * ApplicationInsights Web Auto
+* ApplicationInsights Java Agent
 * Spring Boot 2.x
 * Standalone (jar)
 
 Test
 
-* Copy `applicationinsights-agent-2.5.0.jar` into this directory
 * Update instrumentation key in `ApplicationInsights.xml`
 * Build with `mvn clean package`
-* Run: `java -javaagent:applicationinsights-agent-2.5.0.jar -jar target/app.jar`
+* Run: `java -javaagent:target/dependency/applicationinsights-agent-2.5.0.jar -jar target/app.jar`
 
 * Hit http://localhost:8080/log/error
 * Verify data in portal

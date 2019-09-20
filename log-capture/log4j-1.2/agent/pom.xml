@@ -42,6 +42,28 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
+      <plugin>
+        <!-- download the applicationinsights-agent jar file to the target/dependency directory -->
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <artifactItems>
+            <artifactItem>
+              <groupId>com.microsoft.azure</groupId>
+              <artifactId>applicationinsights-agent</artifactId>
+              <version>${applicationinsights.version}</version>
+            </artifactItem>
+          </artifactItems>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
