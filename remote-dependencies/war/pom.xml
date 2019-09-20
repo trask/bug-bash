@@ -10,8 +10,9 @@
   </parent>
 
   <groupId>com.github.trask</groupId>
-  <artifactId>remote-dependencies</artifactId>
+  <artifactId>remote-dependencies-war</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
 
   <properties>
     <java.version>1.8</java.version>
@@ -40,34 +41,6 @@
   </dependencies>
 
   <build>
-    <finalName>app</finalName>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <!-- download the applicationinsights-agent jar file to the target/dependency directory -->
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>copy</id>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>copy</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <artifactItems>
-            <artifactItem>
-              <groupId>com.microsoft.azure</groupId>
-              <artifactId>applicationinsights-agent</artifactId>
-              <version>${applicationinsights.version}</version>
-            </artifactItem>
-          </artifactItems>
-        </configuration>
-      </plugin>
-    </plugins>
+    <finalName>ROOT</finalName>
   </build>
 </project>

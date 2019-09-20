@@ -141,6 +141,28 @@ mvn clean package azure-webapp:deploy
 
 ```
       <plugin>
+        <!-- download the applicationinsights-agent jar file to the target/dependency directory -->
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <artifactItems>
+            <artifactItem>
+              <groupId>com.microsoft.azure</groupId>
+              <artifactId>applicationinsights-agent</artifactId>
+              <version>${applicationinsights.version}</version>
+            </artifactItem>
+          </artifactItems>
+        </configuration>
+      </plugin>
+      <plugin>
         <!-- place the applicationinsights-agent jar and AI-Agent xml files inside of the war file under META-INF -->
         <artifactId>maven-war-plugin</artifactId>
         <configuration>

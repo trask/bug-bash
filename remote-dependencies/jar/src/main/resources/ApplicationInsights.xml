@@ -3,7 +3,7 @@
 
   <InstrumentationKey>** Your instrumentation key **</InstrumentationKey>
 
-  <RoleName>Bug Bash - Remote Dependencies</RoleName>
+  <RoleName>Bug Bash - Remote Dependencies, WAR</RoleName>
 
   <!-- HTTP request component (not required for bare API) -->
   <TelemetryModules>
