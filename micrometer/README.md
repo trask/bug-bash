@@ -2,11 +2,13 @@ Configuration
 
 * Micrometer
 
-Test
+Run
 
 * Update instrumentation key in `application.properties`
 * Build with `mvn clean package`
-* Run: `java -jar target/app.jar`
+* Run with `java -jar target/app.jar`
+
+Verify
 
 * Hit http://localhost:8080/hello
-* Verify data in portal
+  * Verify data in portal

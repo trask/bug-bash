@@ -5,17 +5,17 @@ Configuration
 * Spring Boot 2.x
 * Standalone (jar)
 
-Test
+Run
 
 * Update instrumentation key in `ApplicationInsights.xml`
 * Build with `mvn clean package`
-* Run: `java -jar target/app.jar`
+* Run with `java -jar target/app.jar`
+
+Verify
 
 * Hit http://localhost:8080/log/error
-* Verify data in portal
-
+  * Verify data in portal
 * Hit http://localhost:8080/log/warn
-* Verify data in portal
-
+  * Verify data in portal
 * Hit http://localhost:8080/log/info
-* Verify data in portal (should not capture log with the given configuration in `log4j2.xml`)
+  * Verify data in portal (should not capture log with the given configuration in `log4j2.xml`)

@@ -3,7 +3,7 @@ Configuration
 * ApplicationInsights Web (manual)
 * Servlet container (war)
 
-Test
+Run
 
 * Update instrumentation key in `ApplicationInsights.xml`
 * Build with `mvn clean package`
@@ -12,8 +12,9 @@ Test
   * Linux `catalina.sh run`
   * Windows `catalina.bat run`
 
-* Hit http://localhost:8080/hello
-* Verify data in portal
+Verify
 
+* Hit http://localhost:8080/hello
+  * Verify data in portal
 * Hit http://localhost:8080/exception
-* Verify data in portal
+  * Verify data in portal
