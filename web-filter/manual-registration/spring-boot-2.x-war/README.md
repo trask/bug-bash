@@ -8,7 +8,10 @@ Test
 
 * Update instrumentation key in `ApplicationInsights.xml`
 * Build with `mvn clean package`
-* Deploy `target/ROOT.war` to Tomcat
+* Copy `target/ROOT.war` to `<tomcat>/webapps`
+* Run Tomcat from the `<tomcat>/bin` directory
+  * Linux `catalina.sh run`
+  * Windows `catalina.bat run`
 
 * Hit http://localhost:8080/hello
 * Verify data in portal
