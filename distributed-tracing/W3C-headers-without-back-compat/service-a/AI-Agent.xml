@@ -2,7 +2,7 @@
 <ApplicationInsightsAgent>
   <Instrumentation>
     <BuiltIn enabled="true">
-      <HTTP W3C="true"></HTTP>
+      <HTTP W3C="true" enableW3CBackCompat="false"></HTTP>
     </BuiltIn>
   </Instrumentation>
 </ApplicationInsightsAgent>
