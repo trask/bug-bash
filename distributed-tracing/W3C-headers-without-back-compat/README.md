@@ -11,7 +11,7 @@ Test
 * Build all three from their directories (`frontend`, `service-a` and `service-b`)
   * `mvn clean package`
 * Run all three from their directories (`frontend`, `service-a` and `service-b`)
-  * `java -javaagent:target/dependency/applicationinsights-agent-2.5.0.jar -jar target/app.jar`
+  * `java -javaagent:applicationinsights-agent-2.5.0.jar -jar target/app.jar`
 
 * Hit http://localhost:8080/service-a
 * Verify data in portal

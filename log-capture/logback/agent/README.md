@@ -9,7 +9,7 @@ Run
 
 * Update instrumentation key in `ApplicationInsights.xml`
 * Build with `mvn clean package`
-* Run with `java -javaagent:target/dependency/applicationinsights-agent-2.5.0.jar -jar target/app.jar`
+* Run with `java -javaagent:applicationinsights-agent-2.5.0.jar -jar target/app.jar`
 
 Verify
 

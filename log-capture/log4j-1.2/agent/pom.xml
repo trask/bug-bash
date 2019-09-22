@@ -43,7 +43,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
       <plugin>
-        <!-- download the applicationinsights-agent jar file to the target/dependency directory -->
+        <!-- download the applicationinsights-agent jar file -->
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
           <execution>
@@ -62,6 +62,7 @@
               <version>${applicationinsights.version}</version>
             </artifactItem>
           </artifactItems>
+          <outputDirectory>${project.basedir}</outputDirectory>
         </configuration>
       </plugin>
     </plugins>
