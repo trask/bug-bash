@@ -9,16 +9,11 @@ import io.micrometer.core.instrument.Metrics;
 @RestController
 public class HelloController {
 
-    Counter counter = Metrics.counter("mycounter", "tag1", "tag2");
+    private final Counter counter = Metrics.counter("bug_bash_counter");
     
     @RequestMapping("/hello")
     public String index() {
         counter.increment();
         return "Hello!";
-    }
-
-    @RequestMapping("/exception")
-    public String exception() {
-        throw new RuntimeException();
     }
 }

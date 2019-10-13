@@ -11,4 +11,4 @@ Run
 Verify
 
 * Hit http://localhost:8080/hello
-  * Verify data in portal
+  * Verify `bug_bash_counter` metric data in portal
