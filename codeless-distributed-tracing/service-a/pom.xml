@@ -10,7 +10,7 @@
   </parent>
 
   <groupId>com.github.trask</groupId>
-  <artifactId>codeless-distributed-tracing-AI-headers-service-b</artifactId>
+  <artifactId>codeless-distributed-tracing-service-a</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
@@ -21,6 +21,10 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
     </dependency>
     <dependency>
       <groupId>com.microsoft.azure</groupId>
