@@ -15,7 +15,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.microsoft.applicationinsights.core.dependencies.google.common.io.CharStreams;
+import com.google.common.io.CharStreams;
 
 @RestController
 public class HelloController {
