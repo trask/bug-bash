@@ -1,11 +1,6 @@
 {
     "connectionString": "InstrumentationKey=** Your instrumentation key **",
     "roleName": "Bug Bash - Codeless Agent",
-    "debug": true,
-    "telemetryContext": {
-        "k8s.pod.name": "amazing-product",
-        "k8s.pod.namespace": "product-ns"
-    },
     "jmxMetrics": [
         {
             "objectName": "java.lang:type=Threading",
@@ -22,5 +17,7 @@
             "attribute": "LoadedClassCount",
             "display": "Current Class Loaded Count"
         }
-    ]
+    ],
+    "debug": false,
+    "developerMode": false
 }

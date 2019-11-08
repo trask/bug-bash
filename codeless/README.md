@@ -7,7 +7,7 @@ Configuration
 Test
 
 * Copy `applicationinsights-agent-codeless-2.5.0-BETA.3-SNAPSHOT.jar` into this directory
-* Update instrumentation key in `ApplicationInsights.properties`
+* Update instrumentation key in `ApplicationInsights.json`
 * Build: `mvn clean package`
 * Run: `java -javaagent:applicationinsights-agent-codeless-2.5.0-BETA.3-SNAPSHOT.jar -jar target/app.jar`
 
