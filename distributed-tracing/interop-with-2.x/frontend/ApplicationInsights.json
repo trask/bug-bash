@@ -1,0 +1,6 @@
+{
+  "connectionString": "** Your connection string **",
+  "role": {
+    "name": "Interop - Frontend"
+  }
+}
