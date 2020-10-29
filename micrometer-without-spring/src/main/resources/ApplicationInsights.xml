@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationInsights xmlns="http://schemas.microsoft.com/ApplicationInsights/2013/Settings">
+
+  <InstrumentationKey>** Your instrumentation key **</InstrumentationKey>
+
+  <RoleName>Bug Bash - Micrometer</RoleName>
+
+  <SDKLogger type="CONSOLE">
+    <Level>TRACE</Level>
+  </SDKLogger>
+
+  <Channel>
+    <DeveloperMode>true</DeveloperMode>
+  </Channel>
+
+</ApplicationInsights>
