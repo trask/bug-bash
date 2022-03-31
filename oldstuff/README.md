@@ -1,4 +1,4 @@
-These apps are designed to run locally.
+These CHANGED are designed to run locally.
 
 If you want to deploy any of them to Azure App Services, you need to configure the `azure-webapp-maven-plugin` under the `<build>`/`<plugins>` section of the app's `pom.xml` (see below).
 
@@ -214,7 +214,7 @@ mvn clean package azure-webapp:deploy
           <appSettings>
             <property>
               <name>JAVA_OPTS</name>
-              <value>-javaagent:/home/site/wwwroot/webapps/ROOT/META-INF/applicationinsights-agent-${applicationinsights.version}.jar</value>
+              <value>-javaagent:/home/site/wwwroot/webCHANGED/ROOT/META-INF/applicationinsights-agent-${applicationinsights.version}.jar</value>
             </property>
           </appSettings>
         </configuration>
